@@ -6,9 +6,14 @@ restaurante_praca = Restaurante('Praça', 'Gourmet')
 bebida_suco = Bebida('Suco de melancia', 5.0, 'grande')
 prato_pao = Prato('Pãozinho', 2.0, 'O melhor pão da cidade')
 
+bebida_suco.aplicar_desconto()
+prato_pao.aplicar_desconto()
+
+restaurante_praca.adicionar_no_cardapio(bebida_suco)
+restaurante_praca.adicionar_no_cardapio(prato_pao)
+
 def main():
-    print(bebida_suco)
-    print(prato_pao)
+    restaurante_praca.exibir_cardapio
 
 if __name__ == '__main__':
     main()
